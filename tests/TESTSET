@@ -1,0 +1,23 @@
+# -*- coding: utf-8; mode: python -*-
+
+## Input generators.
+# cxx_generator(src='generator_small.cpp', dependency=['testlib.h'])
+# cxx_generator(src='generator_small_ushi.cpp', dependency=['testlib.h'])
+cxx_generator(src='generator.cpp', dependency=['testlib.h'])
+cxx_generator(src='generator-large.cpp', dependency=['testlib.h'])
+cxx_generator(src='generator-line.cpp', dependency=['testlib.h'])
+
+# cxx_generator(src='generator_manual.cpp', dependency=['testlib.h'])
+# cxx_generator(src='generator_ushi.cpp', dependency=['testlib.h'])
+
+## Input validators.
+cxx_validator(src='validator.cpp', dependency=['testlib.h'])
+
+## Output judges.
+cxx_judge(src='output_checker.cpp', dependency=['testlib.h'], variant=testlib_judge_runner)
+
+id='team_making2'
+
+subtask_testset(name='Sample',  score=  0, input_patterns=['01_*'])
+# subtask_testset(name='Subtask', score=200, input_patterns=['01_*', '02_*'])
+subtask_testset(name='All'   ,  score=500, input_patterns=['*'])
