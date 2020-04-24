@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int MIN_N = 1;
+const int MIN_N = 2;
 const int MAX_N = 1e5;
 const int MIN_Q = 1;
 const int MAX_Q = 1e5;

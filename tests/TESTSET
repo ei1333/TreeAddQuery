@@ -6,7 +6,8 @@
 cxx_generator(src='generator.cpp', dependency=['testlib.h'])
 cxx_generator(src='generator-large.cpp', dependency=['testlib.h'])
 cxx_generator(src='generator-line.cpp', dependency=['testlib.h'])
-
+cxx_generator(src='generator-uni.cpp', dependency=['testlib.h'])
+cxx_generator(src='generator-max.cpp', dependency=['testlib.h'])
 # cxx_generator(src='generator_manual.cpp', dependency=['testlib.h'])
 # cxx_generator(src='generator_ushi.cpp', dependency=['testlib.h'])
 

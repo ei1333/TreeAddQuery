@@ -3,7 +3,7 @@
 using namespace std;
 
 // 制約
-const int N_MIN = 1;
+const int N_MIN = 2;
 const int N_MAX = 100000;
 const int Q_MIN = 1;
 const int Q_MAX = 100000;
